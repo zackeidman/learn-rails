@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+   resources :contacts, only: [:new, :create]
    root to: 'visitors#new'
 
   # Example of regular route:
